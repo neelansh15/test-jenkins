@@ -3,10 +3,10 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo 'About to run java!'
-                javac helu.java
+                // javac 'helu.java'
+                helu_groovy= load 'helu.groovy'
+                helu_groovy.helu()
                 java helu
-                echo 'Finished compiling and running java'
             }
         }
     }
