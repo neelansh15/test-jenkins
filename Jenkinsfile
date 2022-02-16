@@ -3,8 +3,10 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                javac 'helu.java'
-                java 'helu'
+                echo 'About to compile and run java!'
+                javac helu.java
+                java helu
+                echo 'Finished compiling and running java'
             }
         }
     }
