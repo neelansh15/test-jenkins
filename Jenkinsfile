@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo 'Hello! Running this from Github'
+                echo 'Hello! Running this from Github *'
                 java helu
             }
         }
